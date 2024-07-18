@@ -9,12 +9,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
         <li>React</li>
+        <li>Next.js</li>
+        <li>JavaScript</li>
+        <li>ServiceNow</li>
+        <li>ASP.NET</li>
+        <li>C#</li>
+        <li>AngularJS</li>
+       
       </ul>
     ),
   },
@@ -52,15 +54,11 @@ const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about.jpg" width={500} height={500} />
+        <Image src="/images/about-me.jpg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">                
-          Hi, I'm Shane Sharareh, a Software Engineer based in Vista, CA. I hold a Bachelor's in Computer Science from California State University San Marcos and graduated from App Academy. I specialize in technologies like JavaScript, React, AngularJS, ASP.NET, C#, and Python.
-I've contributed to impactful projects at GnarlyWood, NewRocket, and Kalloc Studios. Notably, I developed a ServiceNow portal at NewRocket, boosting customer engagement by 50%, and streamlined data integration at GnarlyWood using Python.
-I co-created TBDeveloped, an open-source MERN stack project connecting developers and dreamers. I'm currently pursuing my ServiceNow Certified System Administrator certification, expected in August 2024.
-In my free time, I enjoy playing guitar and working out. Explore my work and get in touch!
-            </p>
+          Hi, I'm Shane Sharareh, a Software Engineer based in Vista, CA. I have a Bachelor's in Computer Science from California State University San Marcos and graduated from App Academy. I specialize in JavaScript, React, AngularJS, ASP.NET, C#, and Python. At NewRocket, I customized 6 ServiceNow portals and led an employee center portal project, boosting customer engagement by 50%. In my free time, I enjoy playing guitar and working out. Explore my work and get in touch!</p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}

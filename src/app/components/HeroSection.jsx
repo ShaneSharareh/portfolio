@@ -2,12 +2,18 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self text-center sm:text-left">
+      <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
         <h1 className="text-white mb-4 text-4xl sm:text-5 lg:text-6xl font-extrabold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Hello I'm{""}</span>
         <br/>
         <TypeAnimation sequence={[
@@ -25,14 +31,23 @@ const HeroSection = () => {
         repeat={Infinity}
         /></h1>
         <p className="text-[#ADB7BE] text-base sm:text-lg lg:xl mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, magni nulla. Necessitatibus culpa sapiente est amet provident assumenda. Magnam, fuga. In dicta omnis error minima aliquam quasi similique tempore en
+          Hello, I'm Shane. I'm a software engineer and web developer who loves music and enjoys creating apps that are both useful to society and enjoyable to use.
         </p>
         <div>
-          <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-white w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">Hire Me</button>
-          <button className="px-1 py-1 rounded-full bg-transparent hover:bg-slate-800 text-white border mt-3 w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"><span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download Resume</span></button>
+        <Link
+              href="#contact"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+            >Hire Me</Link>
+          <Link href="https://drive.google.com/file/d/1Q7ASycl9T2jnu7A81Lsa06Sr6Fn6zpLI/view?usp=sharing"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"><span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download Resume</span></Link>
         </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
           <Image 
               src="/images/me.jpg"
@@ -42,8 +57,9 @@ const HeroSection = () => {
               height={300}
             />
           </div>  
+        </motion.div>
         </div>
-        </div>
+        
     </section>
   )
 }
