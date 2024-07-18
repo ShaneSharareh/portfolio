@@ -14,7 +14,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
-        <h1 className="text-white mb-4 text-4xl sm:text-5 lg:text-6xl font-extrabold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Hello I'm{""}</span>
+        <h1 className="text-white mb-4 text-4xl sm:text-5 lg:text-6xl font-extrabold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Hello  I&apos;m{" "}</span>
         <br/>
         <TypeAnimation sequence={[
           'Shane',
@@ -31,7 +31,7 @@ const HeroSection = () => {
         repeat={Infinity}
         /></h1>
         <p className="text-[#ADB7BE] text-base sm:text-lg lg:xl mb-6">
-          Hello, I'm Shane. I'm a software engineer and web developer who loves music and enjoys creating apps that are both useful to society and enjoyable to use.
+          Hello, my name is Shane.  I&apos;m a software engineer and web developer who loves music and enjoys creating apps that are both useful to society and enjoyable to use.
         </p>
         <div>
         <Link

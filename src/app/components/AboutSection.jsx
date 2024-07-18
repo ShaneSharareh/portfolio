@@ -58,7 +58,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">                
-          Hi, I'm Shane Sharareh, a Software Engineer based in Vista, CA. I have a Bachelor's in Computer Science from California State University San Marcos and graduated from App Academy. I specialize in JavaScript, React, AngularJS, ASP.NET, C#, and Python. At NewRocket, I customized 6 ServiceNow portals and led an employee center portal project, boosting customer engagement by 50%. In my free time, I enjoy playing guitar and working out. Explore my work and get in touch!</p>
+          Hi, my name is Shane Sharareh, a Software Engineer based in Vista, CA. I have a Bachelor's in Computer Science from California State University San Marcos and graduated from App Academy. I specialize in JavaScript, React, AngularJS, ASP.NET, C#, and Python. At NewRocket, I customized 6 ServiceNow portals and led an employee center portal project, boosting customer engagement by 50%. In my free time, I enjoy playing guitar and working out. Explore my work and get in touch!</p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
