@@ -54,7 +54,7 @@ const projectsData = [
   {
     id: 6,
     title: "MySpot",
-    description: "MySpot is a location-saving app developed with Java and Android Studio. It enables users to save their current location or search for favorite spots using the Places API. Once a location is added, it is stored in the app's local database using SQLite.",
+    description: "MySpot is a location-saving app developed with Java and Android Studio. It enables users to save their current location or search for favorite spots using the Places API. Once a location is added, it is stored in the app&apos;s local database using SQLite.",
     image: "/images/projects/my-spot.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/ShaneSharareh/MySpot",

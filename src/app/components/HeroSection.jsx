@@ -31,7 +31,7 @@ const HeroSection = () => {
         repeat={Infinity}
         /></h1>
         <p className="text-[#ADB7BE] text-base sm:text-lg lg:xl mb-6">
-          Hello, my name is Shane.  I&apos;m a software engineer and web developer who loves music and enjoys creating apps that are both useful to society and enjoyable to use.
+          Hello, my name is Shane. I&apos;m a software engineer and web developer who loves music and enjoys creating apps that are both useful to society and enjoyable to use.
         </p>
         <div>
         <Link

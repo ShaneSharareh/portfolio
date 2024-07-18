@@ -35,7 +35,7 @@ const EmailSection = () => {
   href="mailto:shane.s.sharareh@gmail.com"
   className="bg-purple-500 hover:bg-purple-600 text-white font-medium py-2.5 px-5 rounded-lg w-full text-center block"
 >
-  Let's Connect
+  Let&apos;s Connect
 </a>
       </div>
       <div>
