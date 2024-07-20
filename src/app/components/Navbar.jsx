@@ -25,14 +25,15 @@ const navLinks = [
 const Navbar = () => {
  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className={`fixed mx-auto border-0 md:border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] ${navbarOpen ? 'bg-opacity-90' : 'bg-opacity-0'} md:bg-opacity-100 transition-opacity duration-300`}
+    >
         <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-2'>
             <Link href={"/"} 
             className="text-2xl md:text-5xl text-white font-semibold">
             <Image 
               src="/images/logo.png"
               alt="picture of me"
-              classNae="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="hidden md:block"
               width={70}
               height={70}
             />
@@ -51,10 +52,10 @@ const Navbar = () => {
                 }
             </div>
             <div className="menu hidden md:block md:w-auto" id="navbar">
-                <ul className='flex p-4 md:p-o md:flex-row md:space-x-8 mt-0'>
+                <ul className='flex p-4 md:p-o md:flex-row md:space-x-8 mt-0 bg-opacity-100'>
                     {
                         navLinks.map((link, index) => (
-                            <li key={index}>
+                            <li key={index} >
                                 <NavLink href={link.path} title={link.title}></NavLink>
                             </li>
                         ))

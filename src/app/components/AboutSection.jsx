@@ -25,8 +25,43 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>App Academy</li>
-        <li>California State University San Marcos</li>
+        <li>
+          <h5 className="text-lg">App Academy</h5>
+          <p className="text-gray-400">Certificate</p>
+          <p className="text-gray-500">01/2021</p>
+        </li>
+        <li>
+        <h5 className="text-lg">California State University San Marcos</h5>
+          <p className="text-gray-400">B.S. in Computer Science</p>
+          <p className="text-gray-500">06/2017</p>
+
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+          <h5 className="text-lg ">Software Engineer</h5>
+          <p className="text-gray-400">Gnarlywood</p>
+          <p className="text-gray-500">03/2023 - 05/2024</p>
+         
+        </li>
+        <li>
+          <h5 className="text-lg">Software Engineer</h5>
+          <p className="text-gray-400">NewRocket</p>
+          <p className="text-gray-500">06/2021 - 08/2022</p>
+          
+        </li>
+        <li>
+          <h5 className="text-lg">QA Tester</h5>
+          <p className="text-gray-400">Kalloc Studios</p>
+          <p className="text-gray-500">06/2019 - 03/2020</p>
+          
+        </li>
       </ul>
     ),
   },
@@ -35,7 +70,15 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>ServiceNow Certified System Administrator - Expected 08/2024</li>
+        <li>
+          <h5 className="text-lg ">ServiceNow Certified System Administrator</h5>
+          <p className="text-gray-500">Expected: 08/2024</p>
+        </li>
+        <li>
+          <h5 className="text-lg "> ServiceNow
+          Certified Application Developer</h5>
+          <p className="text-gray-500">Expected: 09/2024</p>
+        </li>
       </ul>
     ),
   },
@@ -73,6 +116,13 @@ const AboutSection = () => {
             >
               {" "}
               Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              {" "}
+              Experience{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
