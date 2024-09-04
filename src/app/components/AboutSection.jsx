@@ -72,12 +72,12 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>
           <h5 className="text-lg ">ServiceNow Certified System Administrator</h5>
-          <p className="text-gray-500">Expected: 08/2024</p>
+          <p className="text-gray-500">Expected: 10/2024</p>
         </li>
         <li>
           <h5 className="text-lg "> ServiceNow
           Certified Application Developer</h5>
-          <p className="text-gray-500">Expected: 09/2024</p>
+          <p className="text-gray-500">Expected: 11/2024</p>
         </li>
       </ul>
     ),
